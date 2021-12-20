@@ -46,7 +46,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          sudo apt-get update && sudo apt-get install -y default-libmysqlclient-dev default-mysql-client
+          sudo apt-get update
+          sudo apt-get install build-essential libssl1.1 libssl1.1=1.1.1f-1ubuntu2 libssl-dev libmysqlclient-dev
           python -m pip install --upgrade pip
           pip install poetry tox tox-gh-actions
 
