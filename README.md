@@ -10,16 +10,15 @@
 
 A Django database backend for PlanetScale
 
-
-* Documentation: <https://birdcar.github.io/django-planetscale>
 * GitHub: <https://github.com/birdcar/django-planetscale>
 * PyPI: <https://pypi.org/project/django-planetscale/>
 * Free software: GPL-3.0-only
 
-
 ## Features
 
-* TODO
+* Enables you to use PlanetScale with your Django app
+* Avoids you having to rewrite your model code to set the kwarg `db_constraint=False` on every relationship you model.
+* Subclasses the existing MySQL database backend using the documented process, ensuring compatibility with all versions of Django.
 
 ## Credits
 
