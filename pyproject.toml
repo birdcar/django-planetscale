@@ -1,7 +1,7 @@
 [tool]
 [tool.poetry]
 name = "django-planetscale"
-version = "0.2.2"
+version = "0.2.3"
 homepage = "https://github.com/birdcar/django-planetscale"
 description = "A Django database backend for PlanetScale."
 authors = ["Nick Cannariato <devrel@birdcar.dev>"]
