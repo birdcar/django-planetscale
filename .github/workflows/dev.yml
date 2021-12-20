@@ -32,7 +32,7 @@ jobs:
     # The type of runner that the job will run on
     strategy:
       matrix:
-        python-versions: ['>=3.7']
+        python-versions: ['^3.7.x', '^3.8.x', '3.9.x', '^3.10.x']
         os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
 
@@ -46,7 +46,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          sudo apt-get update && sudo apt-get install -y mysql-client mysql-client-8.0
+          sudo apt-get update && sudo apt-get install -y default-libmysqlclient-dev default-mysql-client
           python -m pip install --upgrade pip
           pip install poetry tox tox-gh-actions
 
